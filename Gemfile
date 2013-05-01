@@ -6,12 +6,12 @@ ACTIVE_ADMIN_PATH = File.dirname(__FILE__) unless defined?(ACTIVE_ADMIN_PATH)
 
 require File.expand_path('spec/support/detect_rails_version', ACTIVE_ADMIN_PATH)
 
-rails_version = detect_rails_version
-gem 'rails', rails_version
 gem 'bourbon'
+gem 'protected_attributes'
+gem 'ransack', github: 'ernie/ransack', branch: 'rails-4'
 
 group :assets do
-  gem 'sass-rails'
+  # gem 'sass-rails'
   gem 'uglifier'
 end
 
@@ -40,7 +40,7 @@ group :test do
   gem 'jslint_on_rails', '~> 1.1.1'
   gem 'launchy'
   gem 'parallel_tests'
-  gem 'rspec-rails',     '~> 2.9.0'
+  # gem 'rspec-rails',     '~> 2.9.0'
   gem 'shoulda-matchers'
   gem 'sqlite3'
 end

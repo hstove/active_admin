@@ -7,7 +7,7 @@ ACTIVE_ADMIN_PATH = File.dirname(__FILE__) unless defined?(ACTIVE_ADMIN_PATH)
 require File.expand_path('spec/support/detect_rails_version', ACTIVE_ADMIN_PATH)
 
 gem 'bourbon'
-gem 'protected_attributes'
+# gem 'protected_attributes'
 gem 'ransack', github: 'ernie/ransack', branch: 'rails-4'
 
 group :assets do
